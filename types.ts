@@ -2,6 +2,7 @@
 export interface Activity {
   id: string;
   title: string;
+  imageUrl?: string;
   description: string;
   fullDescription?: string; // Detailed description for the view
   tips?: string[]; // Local tips
