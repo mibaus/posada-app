@@ -1,0 +1,7 @@
+{
+  "name": "Posada de Nono Guest Experience",
+  "description": "Una aplicación premium para huéspedes de Posada de Nono, Traslasierra. Gestiona tu estadía, conéctate al WiFi y descubre experiencias locales con asistencia de IA.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
