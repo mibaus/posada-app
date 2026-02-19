@@ -6,7 +6,8 @@ export const COMPLEX_INFO: CabinInfo = {
   wifiPass: "posadadenono",
   checkoutTime: "10:00 AM",
   emergencyPhone: "+54 9 3544 123456",
-  managerPhone: "+54 9 3544 654321"
+  managerPhone: "+54 9 3544 654321",
+  cleaningService: "A partir de las 11:00 AM"
 };
 
 export const BOOKS_CATALOG: InventoryItem[] = [
@@ -28,11 +29,11 @@ export const GAMES_CATALOG: InventoryItem[] = [
 ];
 
 export const MASSAGE_MENU: Therapy[] = [
-  { 
-    id: 'm1', 
-    title: 'Sesión de Masajes y Relax', 
-    duration: '50 - 60 min', 
-    description: 'Disfruta de una experiencia renovadora en la comodidad de nuestro espacio Wellness. Ofrecemos masajes descontracturantes, relajantes, piedras calientes y reflexología. Consultanos para personalizar tu sesión.' 
+  {
+    id: 'm1',
+    title: 'Sesión de Masajes y Relax',
+    duration: '50 - 60 min',
+    description: 'Disfruta de una experiencia renovadora en la comodidad de nuestro espacio Wellness. Ofrecemos masajes descontracturantes, relajantes, piedras calientes y reflexología. Consultanos para personalizar tu sesión.'
   }
 ];
 

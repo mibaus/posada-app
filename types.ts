@@ -19,6 +19,7 @@ export interface CabinInfo {
   checkoutTime: string;
   emergencyPhone: string;
   managerPhone: string;
+  cleaningService: string;
 }
 
 export interface ChatMessage {
