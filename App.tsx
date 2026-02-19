@@ -10,16 +10,16 @@ import { Tab } from './types';
 const WeatherWidget = () => (
   <div className="flex items-center justify-between bg-white rounded-2xl p-4 shadow-sm border border-gray-100 mb-6">
     <div className="flex items-center space-x-3">
-        <div className="p-2 bg-amber-50 rounded-full">
-            <Sun className="w-6 h-6 text-amber-500" />
-        </div>
-        <div>
-            <span className="block text-2xl font-bold text-gray-800">24°C</span>
-            <span className="text-xs text-gray-500 font-medium">Soleado hoy</span>
-        </div>
+      <div className="p-2 bg-amber-50 rounded-full">
+        <Sun className="w-6 h-6 text-amber-500" />
+      </div>
+      <div>
+        <span className="block text-2xl font-bold text-gray-800">24°C</span>
+        <span className="text-xs text-gray-500 font-medium">Soleado hoy</span>
+      </div>
     </div>
     <div className="text-right">
-        <span className="text-xs font-bold text-nono-600 uppercase tracking-wide bg-nono-50 px-2 py-1 rounded-md">Nono, Cba</span>
+      <span className="text-xs font-bold text-nono-600 uppercase tracking-wide bg-nono-50 px-2 py-1 rounded-md">Nono, Cba</span>
     </div>
   </div>
 );
@@ -37,23 +37,23 @@ const App: React.FC = () => {
                 Posada<br />
                 <span className="text-nono-600">de Nono</span>
               </h1>
-              <p className="text-gray-500 font-medium text-lg">Tu refugio en las sierras.</p>
+              <p className="text-gray-500 font-medium text-lg">Tu hogar en Traslasierra</p>
             </div>
 
             <WeatherWidget />
 
             <section>
               <div className="flex items-center space-x-2 mb-4">
-                 <div className="h-6 w-1 bg-nono-500 rounded-full"></div>
-                 <h2 className="text-xl font-bold text-gray-800">Conectividad</h2>
+                <div className="h-6 w-1 bg-nono-500 rounded-full"></div>
+                <h2 className="text-xl font-bold text-gray-800">Conectividad</h2>
               </div>
               <WiFiCard />
             </section>
 
             <section>
               <div className="flex items-center space-x-2 mb-4">
-                 <div className="h-6 w-1 bg-terracotta-500 rounded-full"></div>
-                 <h2 className="text-xl font-bold text-gray-800">Relax en la cabaña</h2>
+                <div className="h-6 w-1 bg-terracotta-500 rounded-full"></div>
+                <h2 className="text-xl font-bold text-gray-800">Relax en la cabaña</h2>
               </div>
               <EntertainmentCard />
             </section>
@@ -76,15 +76,15 @@ const App: React.FC = () => {
 
         {/* Bottom Navigation */}
         <nav className="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white/90 backdrop-blur-lg border-t border-gray-200 px-6 py-4 grid grid-cols-3 gap-4 items-center z-50 rounded-t-2xl shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
-          <button 
+          <button
             onClick={() => setActiveTab('home')}
             className={`flex flex-col items-center space-y-1 transition-colors ${activeTab === 'home' ? 'text-nono-600' : 'text-gray-400 hover:text-gray-600'}`}
           >
             <Home className={`w-6 h-6 ${activeTab === 'home' ? 'fill-current' : ''}`} />
             <span className="text-[10px] font-bold tracking-wide">Inicio</span>
           </button>
-          
-          <button 
+
+          <button
             onClick={() => setActiveTab('explore')}
             className={`flex flex-col items-center space-y-1 transition-colors ${activeTab === 'explore' ? 'text-nono-600' : 'text-gray-400 hover:text-gray-600'}`}
           >
@@ -92,7 +92,7 @@ const App: React.FC = () => {
             <span className="text-[10px] font-bold tracking-wide">Explorar</span>
           </button>
 
-          <button 
+          <button
             onClick={() => setActiveTab('info')}
             className={`flex flex-col items-center space-y-1 transition-colors ${activeTab === 'info' ? 'text-nono-600' : 'text-gray-400 hover:text-gray-600'}`}
           >
